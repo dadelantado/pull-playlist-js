@@ -3,12 +3,12 @@ function switchVideo(videoSrc) {
     document.getElementById('FeaturedVideoID').src = videoSrc;
 }
 function onGoogleLoad() {
-    gapi.client.setApiKey('YOUR_APIKEY');
+    gapi.client.setApiKey('AIzaSyA7s-mBPBU5snEKPZ7CAuLwIuvGa6hRGyc');
     gapi.client.load('youtube', 'v3', function() {
 
         var request = gapi.client.youtube.playlistItems.list({
             part: 'snippet',
-            playlistId: 'PLAYLIST_ID_TO_PULL',
+            playlistId: 'PLQGlwvrbD6mJhlPEboaN69uosb7lp-s_V',
             maxResults: 50
         });
 
